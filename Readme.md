@@ -18,31 +18,6 @@
 * `半角カナ`
 * `全角英数字`
 
-### VariableChecker.py
-
-#### 使い方
-`python VariableChecker.py [project dir] ([output csv file path])`
-* *[project dir]* : 検査対象のプロジェクトのディレクトリパス。
-* [output csv file path] : 検査結果のCSV出力先ファイルのパス。省略した場合はコンソールに出力される。
-
-#### 処理の概要
-変数宣言箇所を抽出し、CSVファイルに出力するツール。
-ただし、検索対象の文字列を検索しているだけなので宣言部以外も抽出されます。
-検索対象の文字列は以下の通りです。
-* `U2`
-* `U4`
-* `S4`
-* `VD`
-* `void`
-* `VS1`
-* `VS2`
-* `VS4`
-* `VU1`
-* `VU2`
-* `VU4`
-* `BL`
-* `F4`
-
 文頭に「#define」、「#ifdef」がついているものは除外しています。
 
 ### BasicTypeChecker.py
